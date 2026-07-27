@@ -7,7 +7,7 @@ from cerebras.cloud.sdk import Cerebras
 client = Cerebras(api_key=os.getenv("CEREBRAS_API_KEY"))
 
 # Modelo optimizado de Cerebras
-MODELO_ACTIVO = "gemma-4-31b""
+MODELO_ACTIVO = "gemma-4-31b"
 
 SYSTEM_PROMPT = (
 """
