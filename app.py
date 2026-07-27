@@ -104,14 +104,14 @@ def responder(mensaje, historial):
         yield f"Error en la inferencia con Cerebras: {str(e)}."
 
 ejemplos = [
-    ["¿Quién te diseño?... El Profesor Victor Campos"],
+    ["Construyamos Juntos un libro diario, un libro mayor y un mayor analitico"],
     ["Mi flujo de caja está en rojo, ¿cómo hago un diagnóstico?"],
     ["¿Cómo alinear producción con marketing digital?."],
 ]
 
 demo = gr.ChatInterface(
     fn=responder,
-    title="Soy David IA - Contador, Auditor y Analista Financiero.",
+    title="Soy David IA - Contador y Auditor.",
     description="Soy David IA, una Inteligencia Artificial desarrollada por el Prof. Víctor Campos | CI V-8270225.",
     examples=ejemplos,
     cache_examples=False
