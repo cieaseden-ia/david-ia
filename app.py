@@ -106,7 +106,7 @@ def responder(mensaje, historial):
 ejemplos = [
     ["Construyamos Juntos un libro diario, un libro mayor y un mayor analitico"],
     ["Mi flujo de caja está en rojo, ¿cómo hago un diagnóstico?"],
-    ["¿Cómo alinear producción con marketing digital?."],
+    ["¿Cómo analizar la producción de mi empresa?."],
 ]
 
 demo = gr.ChatInterface(
