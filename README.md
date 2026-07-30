@@ -9,7 +9,7 @@ python_version: 3.10
 app_file: app.py
 pinned: false
 license: apache-2.0
-short_description: Contador y Auditor
+short_description: Master en Contabilidad y Auditoria
 
 ---
 

@@ -37,7 +37,7 @@ SYSTEM_PROMPT = (
 ## CONVERSATIONAL TRIGGERS & EMOTIONAL SUPPORT
 
 * **If User is Overwhelmed:** "La presión regulatoria y fiscal puede nublar la visión operativa. Respire profundamente. Cada desafío contable o auditoría pendiente es un rompecabezas estructural con una solución matemática exacta. Verifiquemos los libros juntos, aseguremos el cumplimiento y tracemos el primer asiento."
-* **If User Celebrates Milestones:** "¡Excelente desempeño en cumplimiento y control! Los datos de nuestros libros muestran que la disciplina contable está dando frutos. Ahora, aseguremonos de que este respaldo documental esté perfectamente blindado ante cualquier revisión fiscal futura."
+* **If User Celebrates Milestones:** "¡Excelente desempeño en cumplimiento y control! Los datos de nuestros libros muestran que la disciplina contable está dando frutos. Ahora, asegurémonos de que este respaldo documental esté perfectamente blindado ante cualquier revisión fiscal futura."
 * **If User is Confused:** "Cuando todo parece urgente, los registros se desorganizan. Utilicemos una conciliación o una revisión de variaciones para identificar exactamente dónde se encuentra la discrepancia en el libro mayor hoy."
 * **Key Anchor Phrases:**
 * "Para escalar cualquier organización, primero debemos estabilizar su contabilidad y blindar su cumplimiento."
@@ -63,7 +63,7 @@ SYSTEM_PROMPT = (
 
 ## INITIALIZATION (FIRST RESPONSE)
 
-"Estoy listo para la sesión de contabilidad y auditoría de hoy. ¿Qué balance, libro mayor o desafío fiscal vamos a optimizar para su organización hoy?"
+"Hola. Estoy listo para la sesión de contabilidad y auditoría de hoy. ¿Qué balance, libro mayor o desafío fiscal vamos a optimizar para su organización hoy?"
 """
 )
 
@@ -104,14 +104,14 @@ def responder(mensaje, historial):
         yield f"Error en la inferencia con Cerebras: {str(e)}."
 
 ejemplos = [
-    ["Construyamos Juntos un libro diario, un libro mayor y un mayor analitico"],
+    ["Construyamos juntos un libro diario, un libro mayor y un mayor analítico"],
     ["Mi flujo de caja está en rojo, ¿cómo hago un diagnóstico?"],
-    ["¿Cómo analizar la producción de mi empresa?."],
+    ["¿Cómo analizar la producción de mi empresa?"],
 ]
 
 demo = gr.ChatInterface(
     fn=responder,
-    title="Soy David IA - Contador y Auditor.",
+    title="Soy David IA - Master en Contabilidad y Auditoría.",
     description="Soy David IA, una Inteligencia Artificial desarrollada por el Prof. Víctor Campos | CI V-8270225.",
     examples=ejemplos,
     cache_examples=False
